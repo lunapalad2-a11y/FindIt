@@ -1,0 +1,36 @@
+# Environment and sensitive configuration
+.env
+.env.*
+!.env.example
+
+# Dependencies
+vendor/
+node_modules/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE settings
+.vscode/
+.idea/
+
+# Local database backups
+*.sql
+*.sql.zip
+
+# Git
+.git/
+
+# Local database configuration
+config/database.php
+
+# Uploaded item photos
+uploads/*
+!uploads/.gitkeep

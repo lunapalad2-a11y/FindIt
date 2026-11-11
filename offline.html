@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#046A38">
+
+    <title>Offline | FindIt</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: var(--light-celadon);
+            font-family: Arial, sans-serif;
+        }
+
+        .offline-container {
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 30px;
+            text-align: center;
+            background: var(--white);
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(4, 106, 56, 0.10);
+        }
+
+        .offline-container img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .offline-container h1 {
+            color: var(--dark-emerald);
+            margin-bottom: 12px;
+        }
+
+        .offline-container p {
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .offline-container button {
+            padding: 13px 25px;
+            border: none;
+            border-radius: 8px;
+            background: var(--emerald);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .offline-container button:hover {
+            background: var(--deep-emerald);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="offline-container">
+
+        <img
+            src="assets/images/icon-192.png"
+            alt="FindIt application icon"
+        >
+
+        <h1>You're Offline</h1>
+
+        <p>
+            It looks like your internet connection is unavailable.
+            Please reconnect to the internet and try again.
+        </p>
+
+        <button onclick="window.location.reload()">
+            Try Again
+        </button>
+
+    </main>
+
+</body>
+</html>
