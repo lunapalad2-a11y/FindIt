@@ -34,3 +34,5 @@ config/database.php
 # Uploaded item photos
 uploads/*
 !uploads/.gitkeep
+# Allow project database schema
+!database/schema.sql
