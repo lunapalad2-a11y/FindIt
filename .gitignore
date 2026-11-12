@@ -28,8 +28,6 @@ desktop.ini
 # Git
 .git/
 
-# Local database configuration
-config/database.php
 
 # Uploaded item photos
 uploads/*
