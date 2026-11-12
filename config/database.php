@@ -10,9 +10,10 @@ $password = getenv('DB_PASS') !== false ? getenv('DB_PASS') : "";
 
 $options = [];
 
-// Many cloud MySQL providers require SSL
+// Cloud MySQL providers (like TiDB Cloud) require a secure connection
 if (getenv('DB_SSL') === 'true') {
-    $options[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = false;
+    $options[PDO::MYSQL_ATTR_SSL_CA] = getenv('DB_SSL_CA') ?: '/etc/ssl/certs/ca-certificates.crt';
+    $options[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = true;
 }
 
 try {
